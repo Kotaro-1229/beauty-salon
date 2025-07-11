@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Atelier Lien</title>
+    <!--リセットcss/オリジナルcss/js-->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!--swiper設置-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--GoogleFonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&family=Kosugi&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--FontAwsome-->
+    <script src="https://kit.fontawesome.com/65a8d538b4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--ハンバーガーメニュー設置-->
+    <div class="title-container">
+        <h1 class="page-title hero-title">Hair Atelier Lien</h1>
+        <i class="fa-solid fa-bars humbarger-icon"></i> <!--ハンバーガーメニューアイコン-->
+    </div>
+    <!--スライダー設置-->
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="Image-folder/slide1.jpg" alt="slide1"></div>
+                <div class="swiper-slide"><img src="Image-folder/slide2.jpg" alt="slide2"></div>
+                <div class="swiper-slide"><img src="Image-folder/slide3.jpg" alt="slide3"></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+<!--アクセス画面-->
+        <h1 class="page-title title-margin" id="access">アクセス</h1>
+        <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13128.496372440632!2d139.5698153604713!3d35.70315786127921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee45e33d4305%3A0x770cb37aee4fd5e1!2z5p2x5Lqs6YO95q2m6JS16YeO5biCIOWQieelpeWvug!5e1!3m2!1sja!2sjp!4v1751870678959!5m2!1sja!2sjp" width="402" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+<!--スタイル画面-->
+        <h1 class="page-title title-margin" id="style">スタイル</h1>
+        <div class="style-container-1">
+        <h2 class="text filter-btn" data-filter="all">全て</h2>
+        <h2 class="text filter-btn" data-filter="man" data-group="gender">メンズ</h2>
+        <h2 class="text filter-btn" data-filter="woman" data-group="gender">レディース</h2>
+        </div>
+        <div class="style-container-2">
+        <p class="text">長さで選ぶ</p>
+        <h2 class="text filter-btn" data-filter="long" data-group="length">ロング</h2>
+        <h2 class="text filter-btn" data-filter="medium" data-group="length">ミディアム</h2>
+        <h2 class="text filter-btn" data-filter="short" data-group="length">ショート</h2>
+        </div>
+        <!--JSでgrid作成-->
+        <div id="styleImg"></div>
+<!--スタッフ画面-->
+        <h1 class="page-title title-margin" id="stuff">スタッフ</h1>
+        <div id="stuffImg"></div>
+<!--Q&Aアコーディオン-->
+        <h1 class="page-title title-margin" id="question">よくある質問</h1>
+        
+        <div class="qa__box">
+          <dl>
+            <dt class="js-qa__parent"> <!-- jsで取得する要素 -->
+                <span>Q</span>
+                <h3 class="pageSubTitle2 text">大体の見積り金額を電話で教えてもらえますか？</h3>
+                <div class="crossBar"></div>
+            </dt>
+            <dd class="qa__child">
+                <span>A</span>
+                <p class="contentText text">テスト解答</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="qa__box">
+          <dl>
+            <dt class="js-qa__parent"> <!-- jsで取得する要素 -->
+                <span>Q</span>
+                <h3 class="pageSubTitle2 text">予約はどのようにすればいいですか？</h3>
+                <div class="crossBar"></div>
+            </dt>
+            <dd class="qa__child">
+                <span>A</span>
+                <p class="contentText text">テスト解答</p>
+            </dd>
+          </dl>
+        </div>
+<!--お問い合わせ-->
+        <h1 class="page-title title-margin">お問い合わせ</h1>
+        <section class="contact-container">
+            <div class="contact-img">
+                <img src="Image-folder/contact-img.jpg" alt="contact-image">
+            </div>
+            <div class="contact">
+                <p class="text information">住所:　東京都渋谷区神宮前4-3-15 リアンビル 1F</p>
+                <p class="text information">営業時間：10:00~20:00(火曜定休)</p>               
+            </div>
+        </section>
+</body>
+</html> 

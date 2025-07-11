@@ -1,0 +1,304 @@
+/*共通
+------------------*/
+body{
+    background-color: #F4F6F6;
+    line-height: 1.7;
+}
+.page-title{
+    margin: 0rem auto;
+    text-align: center;
+    font-size: 35px; 
+    font-family:"Jomolhari","Kosugi","sans-serif";
+}
+.title-margin{
+    margin-top: 5rem !important;
+}
+.text{
+    font-family:"Noto Sans JP","sans-serif";
+    font-size: 8px;
+}
+/*スマホ用
+------------------*/
+
+/*HEROセクション
+--------------------------------*/
+.hero-title{
+    margin-left: 0rem;
+}
+/*ハンバーガーメニュー
+------------------*/
+.title-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.humbarger-icon{
+    font-size:50px;
+    color: #6fc63c;
+    position: fixed;
+    right: 1rem;
+    cursor: pointer;
+}
+/*スライダー設置
+------------------*/
+.swiper-slide img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.swiper {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-top:5rem;
+}
+.swiper-pagination-bullet{
+    background-color: #7DD947 !important;
+    opacity: 1;
+}
+.swiper-scrollbar {
+  display: none !important;
+}
+/*矢印(スマホ画面非表示)*/
+@media screen and (max-width: 768px) {
+  .swiper-button-prev, .swiper-button-next {
+    display: none !important;
+  }
+}
+.swiper-button-prev i, .swiper-button-next i{
+  color: #7DD947;
+  font-size: 50px; 
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none; 
+}
+.swiper-button-next{
+    padding-right:1rem;
+}
+.swiper-button-prev{
+    padding-left: 1rem;
+}
+.swiper-button-prev i:hover, .swiper-button-next i:hover {
+  color: green;
+}
+/*アクセス
+----------------------*/
+.google-map {   
+    margin-top: 2.5rem;
+    width: 100%;
+}
+/*スタイル
+---------------------*/
+.style-container-1{
+    display: flex;
+    justify-content:space-between;
+    margin: 2.5rem 2rem 0;
+}
+.style-container-1 h2 {
+    border: solid 1px black;
+    padding: 0.5rem 1rem;
+}
+.style-container-2{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    gap:1rem;
+}
+.style-container-2 h2{
+    border:solid 1px black;
+    padding: 0.25rem .4rem;
+    border-radius: 10px;
+}
+.filter-btn.active {
+  background-color: rgb(193, 193, 193); /* お好みの色 */
+  color: white;
+}
+#styleImg{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 1rem;
+}
+img{
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+/*Q&Aアコーディオン
+------------------*/
+  .sec {
+    width: auto;
+    padding: 0 20px;
+  }
+  .pageSubTitle::after {
+    content: "";
+    display: block;
+    width: 74.6px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 35.2px;
+  }
+  .pageSubTitle > span {
+    display: block;
+    font-size: 13px;
+    line-height: 1.75;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 5px;
+  }
+  .pageSubTitle--center {
+    text-align: center;
+  }
+  
+  /* FAQパーツ */
+  .pageSubTitle2 {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1rem;
+  }
+  .contentText {
+    font-size: 19px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .qa {
+    padding-top: 180px;
+    padding-bottom: 278px;
+  }
+  .qa__box {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+  }
+  .qa__box > dl > dt {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    position: relative;
+  }
+  .qa__box > dl > dt .crossBar {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+  }
+  .qa__box > dl > dt .crossBar::before {
+    content: "";
+    display: inline-block;
+    width: 1.6px;
+    height: 100%;
+    background-color: #4D4D4D;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: center center; /* 中心を基準にtransform */
+    transform: translateX(-50%) rotate(0deg);
+    transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .qa__box > dl > dt .crossBar::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1.6px;
+    background-color: #4D4D4D;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .qa__box > dl > dt > span {
+    font-size: 28px;
+    line-height: 1.75;
+    font-weight: 500;
+    font-style: normal;
+    color: #5FB1DE;
+    margin-right: 23px;
+  }
+  
+  .qa__box > dl > dd {
+    margin: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 0px 30px; /* paddingの上下を0にする */
+    max-height: 0; /* max-heightを0にする、レスポンシブ対応 */
+    overflow: hidden;  /* overflow: hidden;を付けるのがポイント */
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .qa__box > dl > dd > span {
+    font-size: 28px;
+    line-height: 1.7;
+    font-weight: 500;
+    font-style: normal;
+    color: #5FB1DE;
+    margin-right: 23px;
+  } 
+  /* アニメーション後のスタイル */
+  .qa__box > dl > dd.is-open { /* heightとpaddingをアニメーション */
+    max-height: 100px;
+    padding: 10px 30px;
+  }
+  /* ＋ボタンのアニメーション */
+  .qa__box > dl > dt.is-open .crossBar::before {
+    transform: translateX(-50%) rotate(90deg);  /* 90度回転 */
+  }
+
+/*お問い合わせ
+------------------*/
+.contact-img{
+    margin: 2rem auto;
+    text-align: center;
+}
+.contact-img img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    display:inline-block;
+}
+.contact{
+    margin: 2rem auto;
+    text-align: center;
+
+}
+.information{
+    font-size: 10px;
+    text-align: center;
+    border-bottom: solid 1px black;
+    width: 60%;
+}
+.information{
+    margin: 2rem auto;
+}
+/*PC版
+------------------*/
+@media screen and (min-width: 769px) {
+body{
+    font-size: 120%;
+}
+h1.page-title{
+    margin: 0 auto;
+}
+#styleImg{
+    grid-template-columns: repeat(4, 1fr);
+}
+.information-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+.information.text{
+    font-size: 10px;
+    margin: 2rem auto 0 1rem;
+    text-align: left;
+}
+}
