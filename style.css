@@ -32,19 +32,52 @@ html, body {
 }
 /*ハンバーガーメニュー
 ------------------*/
+/*:root {
+  --brown: #7B4F3E;
+  --light-green: #7DD947;
+  --Noto-Sans-JP: "Noto Sans JP", sans-serif;
+}いちおう*/
 .title-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
 }
 .humbarger-icon{
     font-size:50px;
     color: #6fc63c;
-    position: fixed;
     right: 1rem;
     cursor: pointer;
     z-index: 9999;
+}
+.menu{
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index: 4;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--brown);
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  transition: .4s;
+}
+/*閉じるボタン*/
+#menu-close{
+  border: 1px solid var(--light-green);
+}
+/*ハンバーガーメニューパネル*/
+#menu-panel{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  padding: 8rem 2rem 2rem;
+  width:max(32vw,20rem);
+  height: 100vh;
+  background-color: var(--brown);
+  box-shadow: 0 0 2rem var(--brown);
+  font-family: var(--Noto-Sans-JP);
+  translate: 100vw;
 }
 /*スライダー設置
 ------------------*/

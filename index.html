@@ -25,11 +25,28 @@
     <!--ハンバーガーメニュー設置-->
     <div class="title-container">
         <h1 class="page-title hero-title">Hair Atelier Lien</h1>
-        <i class="fa-solid fa-bars humbarger-icon"></i> <!--ハンバーガーメニューアイコン-->
+        <nav>
+            <button id="menu-open" class="btn-menu">
+            <i class="fa-solid fa-bars humbarger-icon"></i> <!--ハンバーガーメニューアイコン-->
+            </button>
+                <div id="menu-panel">
+                    <button id="menu-close" class="btn-menu">
+                            <i class="fa-solid fa-bars humbarger-icon"></i> <!--ハンバーガーメニューアイコン-->
+                    </button>
+                    <ul class="menu-list">
+                        <li><a href="#top">ホーム</a></li>
+                        <li><a href="#access">アクセス</a></li>
+                        <li><a href="#style">スタイル</a></li>
+                        <li><a href="#stuff">スタッフ</a></li>
+                        <li><a href="#question">よくある質問</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+        </nav>
     </div>
     <!--スライダー設置-->
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper" id="top">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
