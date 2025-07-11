@@ -44,6 +44,7 @@ html, body {
     position: fixed;
     right: 1rem;
     cursor: pointer;
+    z-index: 9999;
 }
 /*スライダー設置
 ------------------*/
